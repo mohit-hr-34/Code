@@ -1,0 +1,10 @@
+x=c(0,1,2,3,4,5)
+f=c(142,156,69,27,5,1)
+N=sum(f);N
+fx=f*x;fx
+Mean=sum(fx)/N;Mean
+Lamda=1
+probability=dpois(x,Lamda)
+Exp_Freq=N*probability;
+ef=round(Exp_Freq,0);ef
+data.frame(x,f,probability,Exp_Freq,ef)
